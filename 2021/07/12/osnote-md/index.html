@@ -142,7 +142,7 @@
 
 
 
-  <title>Hexo</title>
+  <title>操作系统知识点 | Hexo</title>
   
 
 
@@ -161,8 +161,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -259,9 +258,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -291,9 +290,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2021/07/12/osnote-md/" itemprop="url">操作系统知识点</a></h1>
+          <h1 class="post-title" itemprop="name headline">操作系统知识点</h1>
         
 
         <div class="post-meta">
@@ -341,9 +338,7 @@
       
 
       
-        
-          
-            <h2 id="第一章-导论"><a href="#第一章-导论" class="headerlink" title="第一章 导论"></a>第一章 导论</h2><p>现代通用计算机系统由一个或多个CPU和若干设备控制器通过共同的总线相连而成。</p>
+        <h2 id="第一章-导论"><a href="#第一章-导论" class="headerlink" title="第一章 导论"></a>第一章 导论</h2><p>现代通用计算机系统由一个或多个CPU和若干设备控制器通过共同的总线相连而成。</p>
 <p>打开电源或重启——运行初始化程序（引导程序）——定位操作系统并将其装入内存——执行第一个进程</p>
 <p>引导程序：通常位于ROM或者EEPROM，称为计算机硬件中的固件。用来初始化系统的所有部分（CPU寄存器，设备控制器和内存）。<br>中断：硬件可随时通过系统总线向CPU发出信号，出发中断。软件通过系统调用（或者其他特别操作）触发中断。<br>发生中断——调用一个通用子程序检查中断信息——使用中断处理指针表（中断向量）——间接调用中断处理子程序</p>
 <p>现在的操作系统都是以中断为驱动的。</p>
@@ -861,8 +856,6 @@
 <li>创建数据结构和算法来将逻辑文件系统映射到物理外存设备上<br>另外，与内存管理的部分方式相同，磁盘同样是以块为单位进行转移的。每块为一个或多个扇区</li>
 </ul>
 
-          
-        
       
     </div>
     
@@ -879,405 +872,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/07/09/computerNet-md/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2021/07/09/computerNet-md/" itemprop="url">计算机网络部分知识点</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-07-09T18:40:55+08:00">2021-07-09</time>
+              <a href="/2021/07/09/computerNet-md/" rel="next" title="计算机网络部分知识点">
+                <i class="fa fa-chevron-left"></i> 计算机网络部分知识点
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h2 id="第一章计算机网络和因特网"><a href="#第一章计算机网络和因特网" class="headerlink" title="第一章计算机网络和因特网"></a>第一章计算机网络和因特网</h2><p>链路层交换机主要用在接入网中，路由器主要用在网络核心</p>
-<p><strong>接入网</strong></p>
-<ol>
-<li>DSL(Digital Subscribe Line)数字用户线</li>
-<li>CIC(Cable Internet Access)电缆因特网接入</li>
-<li>FTTH(Fiber TO The Home)光纤到户</li>
-<li>以太网和WIFI</li>
-<li>广域无线接入</li>
-</ol>
-<p><strong>物理媒体</strong></p>
-<ol>
-<li>双绞线</li>
-<li>同轴电缆</li>
-<li>光纤</li>
-<li>陆地无线电信道</li>
-<li>卫星无线电信道</li>
-</ol>
-<p>分组交换常见方式是存储转发机制<br>所谓存储转发是指交换机在收到一个完成的分组，才会向链路输出转发分组，否则就将收到的部分分组缓存起来；因为缓存等待一个分组的全部数据而导致的时间开销被称为存储转发时延<br>如果缓冲区存不下了，就会丢包<br>时延 = 处理时延 + 排队时延 + 传输时延 + 传播时延</p>
-<p>实际上，分组交换机之所以能够知道往哪去是因为其内部有一个转发表，这个表维护了一个IP地址和链路的对应关系，所以处理流程为：<br>通过分组的必要信息，获得目的端系统的IP地址<br>通过IP地址索引转发表，从而确定输出链路</p>
-<p><strong>电路交换</strong></p>
-<ol>
-<li>时分复用</li>
-<li>频分复用</li>
-<li>波分复用</li>
-<li>码分复用</li>
-</ol>
-<p><strong>分组交换的优点：</strong><br>    它提供了比电路交换更好的带宽共享；<br>    它比电路交换更简单、更有效、实现成本更低；</p>
-<p><strong>分组交换的缺点：</strong><br>    分组交换不适合实时服务，因为端到端的时延是可变、不可预测的，这和整个网络的情况相关；</p>
-<p><strong>电路交换的优点：</strong><br>    提供了端对端传输数据的速率保证；</p>
-<p><strong>电路交换的缺点：</strong><br>    电路交换存在静默期，这是指专用电路空闲时，其占用的资源并没有得到充分的利用；<br>    建立连接的过程比较复杂；</p>
-<p><strong>吞吐量：</strong> 对于某条路径上的结点来说，和该结点有关的速度有两个：接收数据的速度和发送数据的速度，而该结点的吞吐量是这两个速度中较小的一个；对于某条路径来说，该路径的吞吐量则是所有节点的吞吐量的最小值；</p>
-<h2 id="第二章-应用层"><a href="#第二章-应用层" class="headerlink" title="第二章 应用层"></a>第二章 应用层</h2><p>HTTP被称为无状态协议<br>在因特网应用程序中，客户端和服务器将在很长的时间范围里通信；应用程序将根据自身的特点，选择以规则的间隔周期性性发出请求也可以间断性一个个发出请求。当通信是使用TCP协议时，服务器端需要做出一个决定：这些请求是使用一个TCP连接完成还是通过独立的TCP连接完成。如果采取前一个方法，则称应用程序使用持续连接，如果使用后一种方式，则称为非持续连接。</p>
-<p>使用非持续连接时，每个TCP连接在服务器发送一个对象后就会关闭，也就是每个TCP只传送一个请求报文和响应报文；</p>
-<p>为了描述持续连接和非持续连接的特点，我们引入RTT(Round-Trip Time)。RTT指的是，一个短分组从客户端到服务器，然后再返回客户端所用的时间。RTT包括分组的传播时延、排队时延、处理时延（因为是短分组，所以其传输时延可不计）；因为客户端和服务器建立TCP连接的时候，会通过一个三次握手的过程来交换传输控制信息。三次握手的前两次占用了一个RTT，客户结合第三次握手通行会通过该连接发送一个HTTP请求报文，一旦该分组到达服务器，服务器便开始使用TCP传输HTML对象。因此，粗略地说，响应时间是两个RTT加上传输HTML的时间（不是传播）。</p>
-<p><strong>非持续连接</strong>必须为每个请求新建一个TCP连接，而每个TCP连接将占用系统资源，包括缓冲区和变量等，这样服务器的负担就很重了。第二，一个对象将通过两个RTT的时延才能交付。</p>
-<p>如果使用<strong>持续连接</strong>，那么服务器在发送响应报文后将保持该TCP打开，后续客户端可以使用该连接来向服务器发出请求。不但一个完整的页面可以通过同一个连接传送，同一台服务器上的多个页面也可以通过同一个连接发送。这就提高了效率；</p>
-<p>一般来说，如果一条连接在一定的时间间隔后没被使用的话，就会被关闭。HTTP默认使用的是带流水线的持续连接。</p>
-<h4 id="请求报文"><a href="#请求报文" class="headerlink" title="请求报文"></a>请求报文</h4><p>一个请求报文具有至少一行的内容。请求报文的第一行称为请求行，其后继的各行被称为首部行。请求行包含三个内容：方法字段、URL字段、HTTP版本；其中方法字段可为：GET、POST、PUT、DELETE、HEAD等。URL字段里可以传递请求对象的标志；</p>
-<p>首部行包含是否在发送完响应报文后关闭TCP连接的Connection；请求的主机地址（该头部信息被Web高速缓存所要求）；浏览器版本；可接受的语言等头部信息；</p>
-<p>在首部行之后一个空行，之后便是请求的“实体体”。该实体体可以在POST方法里传递Form表单内容或者传递其它一些二进制流数据等。值得注意的是，表单也不一定必须使用POST方法。如果使用get,实体体为空，会显示在url中。</p>
-<p>Head类似于get方法，将会用一个http报文进行响应，但是不返回请求对象，经常用作调试跟踪。put方法允许用户上传对象到指定的Web服务器上指定的路径。Delete方法允许用户或应用程序删除Web服务器上的对象。</p>
-<h4 id="响应报文"><a href="#响应报文" class="headerlink" title="响应报文"></a>响应报文</h4><p>响应报文总体上也分三个部分，第一部分是状态行，包含HTTP版本、状态以及状态信息等内容；第二部分是首部行，包含发送日期、服务器类型、上一次修改请求资源的时间、内容的类型等内容。第三部分是实体体。实体体包含请求对象本身。</p>
-<p>这里的Date是从文件系统中检索到该对象，插入到响应报文，并发送该响应报文的时间。</p>
-<p>常见状态码</p>
-<ul>
-<li>200：请求成功 处理方式：获得响应的内容，进行处理</li>
-<li>301：请求到的资源都会分配一个永久的URL，这样就可以在将来通过该URL来访问此资源 处理方式：重定向到分配的URL</li>
-<li>400：非法请求 处理方式：丢弃</li>
-<li>404：没有找到 处理方式：丢弃</li>
-<li>505：服务器不支持请求报文使用的http版本。</li>
-</ul>
-<h4 id="Cookie"><a href="#Cookie" class="headerlink" title="Cookie"></a>Cookie</h4><p>前面提到，HTTP是无状态协议，但是Web站点为了识别用户身份或者限制用户访问的时间或者将用户访问的内容同用户身份相关联，Web站点可以使用Cookie技术；</p>
-<p>Cookie技术包含4个组件<br>    HTTP响应报文里增加一个关于Cookie的首部行；<br>    HTTP请求报文里增加一个关于Cookie的首部行；<br>    用户端系统保留一个Cookie文件，由浏览器保存维护；<br>    Web站点建立Cookie和用户身份的关联；</p>
-<h4 id="web缓存"><a href="#web缓存" class="headerlink" title="web缓存"></a>web缓存</h4><p>Web缓存器也被称为代理服务器，它代表初始web服务器来满足HTTP请求。它有自己的存储空间，并在存储空间里保持有最近请求过的对象的副本；可以通过配置浏览器，将所有指向初始服务器的请求首先指向代理服务器。</p>
-<p>当代理服务器收到一个HTTP请求后，它将检查本地是否缓存过该对象，如果缓存过该对象，将检查是否过期，如果没有过期，则直接将该对象返回给浏览器；如果本地不存在或者存在已过期，则代理服务器将根据请求报文里的Host首部行以及请求行里的URL字段向初始服务器发出请求，然后将响应对象返回给浏览器并缓存在本地。</p>
-<h4 id="FTP"><a href="#FTP" class="headerlink" title="FTP"></a>FTP</h4><p>HTTP和FTP都是应用层协议，它们都运行在TCP协议之上，但是它们之间也有一些重要区别，其中一个就是FTP使用连个并行的TCP连接来传输数据，一个TCP被称为控制连接，用来传输FTP命令；一个TCP连接被称为数据连接，用于传输文件数据；因为FTP协议内，控制信息是通过一个独立的TCP连接传输，所以我们称FTP的控制信息是带外传送的；如果控制信息和数据信息通过同一个TCP传输，则称为带内传送。TCP控制连接端口21，数据连接端口20</p>
-<p>需要注意的是，FTP中控制连接贯穿整个会话，但是数据连接会在一个文件开始传输的时候建立，在传输结束后关闭；所以每次传输一个新的文件时，都会新建一个数据连接；</p>
-<p>同时，FTP需要在整个会话期间，保留用户的状态，也就是将控制连接同用户账户关联起来，同时记录用户在远程目录树上的操作，这就限制了FTP可以同时维持的会话总数.</p>
-<h4 id="SMTP"><a href="#SMTP" class="headerlink" title="SMTP"></a>SMTP</h4><p>因特网电子邮件系统有三个核心组件：用户代理、邮件服务器、SMTP（简单邮件传输协议，Simple Mail Transfer Protocol）。</p>
-<p>邮件服务器构成了电子邮件系统的核心。每个收发方在邮件服务器上拥有一个邮箱；一个典型的电子邮件发送过成为：发送方通过用户代理将邮件传送到发送方的邮件服务器，然后再传输到接收方的邮件服务器，然后邮件被分发到接收方的邮箱里；接收方从邮件服务器里获取自己的邮件时需要通过邮件服务器的验证</p>
-<p>SMTP是因特网中电子邮件的主要应用层协议，它使用TCP可靠数据传输从发送方的邮件服务器向接收方的邮件服务器发送邮件；在每台邮件服务器上同时运行SMTP服务器和SMTP客户端。当邮件服务器接收其他邮件服务器的邮件时，它表现为SMTP服务器，当邮件服务器向其他邮件服务器发送邮件时，表现为SMTP客户端。</p>
-<p>如果发送端不能将邮件发送个接受端的服务器，发送端的邮件服务器会在一个报文队列中保持该报文并在以后尝试再次发送。</p>
-<p>传输的三个阶段：握手、传输、关闭连接。</p>
-<p>SMTP25号端口。SMTP是持续连接的。对每一报文，客户使用一个新的MAIL FROM：crepes.fr开始。当所有报文发送完后才发送QUIT，断开连接。SMTP出现在因特网之前，尽管它有着很不错的特性，但是它具有的某种陈旧的特征表明它仍然是一种继承的技术，比如，它限制邮件报文的所有部分只能使用7比特的ASCII表示，这就导致二进制多媒体文件需要编码为ASCII，而且在发送方需要编码，接收方则需要解码。</p>
-<p>值得注意的是，SMTP报文一般不使用中间邮件服务器发送报文，也就是邮件不会在中间某个邮件服务器保留；在SMTP握手阶段，SMTP客户端将介绍发送方和接收方的邮箱地址；一旦介绍完毕后，SMTP客户端将开始发送报文</p>
-<p>HTTP和SMTP都是用TCP协议；持续的HTTP和SMTP都是用持续连接；但是两者也有区别。</p>
-<ol>
-<li>首先HTTP被设计为一个Pull协议而SMTP被设计为一个Push协议。即用户通过HTTP主动向服务器请求内容，而SMTP则是客户将内容推向服务器端；</li>
-<li>第二个区别就是HTTP传输的数据不一定是用ASCII字符，但是SMTP则只能使用ASCII字符；</li>
-<li>第三个重要区别就是，HTTP将每个对象封装在自己的响应报文里，而SMTP则将所有的报文对象放到一个报文之中；</li>
-</ol>
-<h4 id="POP3-IMAP-HTTP"><a href="#POP3-IMAP-HTTP" class="headerlink" title="POP3 IMAP HTTP"></a>POP3 IMAP HTTP</h4><p>需要注意的是，SMTP是邮件服务器之间发送邮件报文的协议，并不是用户通过代理和邮件服务器之间通信的协议；用户代理使用邮件访问协议来从邮件服务器上获取邮件信息；目前常用的邮件访问协议有POP3（Post Office Protocol-Version 3）、因特网邮件访问协议（IMAP，Internet Mail Access protocol）和HTTP</p>
-<h4 id="POP3"><a href="#POP3" class="headerlink" title="POP3"></a>POP3</h4><p>POP3是一个非常简单的协议，因为简单，所以功能有限；POP3使用端口110来建立TCP连接（SMTP使用端口25）；POP3按照三个阶段进行工作：特许、事务处理和更新；在特许阶段，用户代理发送密码和用户名，进行身份鉴别；第二阶段，用户代理取回报文，同时还可以做删除、取消删除等标记或者统计邮件信息；第三个阶段是在用户退出后，POP3结束会话，删除被标记的邮件；</p>
-<p>一个需要注意的是，POP3用户代理可以使用两种事务处理模式：一种是下载并删除，另一种是下载保留；POP3代理发出的命令和其工作模式相关；下载并删除的方法存在的问题是，如果用户在一台设备上查看了邮件（下载了邮件）后，邮件将被删除，那么在其他设备上将无法查看邮件；这给用户带来一定的不便。使用下载保存方式，则用户下载邮件后，邮件还在服务器上。</p>
-<p>在用户代理与邮箱服务器之间的POP3会话期间，该POP3服务器保留了一些状态信息，特别是标记了哪些用户报文被标记为删除了。但是POP3服务器并不在POP3绘画过程中携带状态信息，大大简化了POP3的服务。</p>
-<h4 id="IMAP"><a href="#IMAP" class="headerlink" title="IMAP"></a>IMAP</h4><p>POP3协议无法为用户提供邮件分类管理的功能，虽然用户可以通过将邮件下载到本地，然后由用户代理程序做分类管理，但是处理的结果是无法同步到其他查看设备上的。为了解决这一问题，IMAP诞生了。IMAP是一个邮件访问协议，比POP3要复杂的多，当然也就有更多的特色了。</p>
-<p>（远程）IMAP将每一份邮件和一个一个文件夹联系起来，当报文第一次到达服务器时，它与收件人的INBOX相关联。收件人可以将邮件移到新创建的文件夹，阅读邮件，删除邮件等。IMAP允许用户在不同文件夹里移动邮件并且查询邮件。值得注意的是，IMAP服务器维护了IMAP会话的用户状态信息，但是POP3并不；IMAP协议还允许用户代理获取报文组件而不是报文整体。</p>
-<h4 id="基于Web的电子邮件"><a href="#基于Web的电子邮件" class="headerlink" title="基于Web的电子邮件"></a>基于Web的电子邮件</h4><p>这种方式主要是指，用户使用HTTP协议和邮件服务器通信。用户代理就是普通的浏览器，但是，邮件服务器之间还是使用SMTP协议的</p>
-<h4 id="DNS"><a href="#DNS" class="headerlink" title="DNS"></a>DNS</h4><p>首先，需要注意的是，在计算机网络里，我们通过IP地址来标记某一时刻网络中唯一的主机。IP地址（IPV4）由4个字节组成，有着严格的层次结果.但是，同时也就引入一个问题：主机名和IP地址的转换问题；</p>
-<p>计算机网络里有一种应用专门提供这样的服务，它就是DNS（Domain Name System）域名系统。DNS是一个由分层的DNS服务器组成的分布式数据库和一个使得主机可以查询分布式数据库的应用层协议组成；</p>
-<p>DNS运行在UDP之上，使用53号端口</p>
-<p>除了提供主机名到IP地址的转换外，DNS还提供以下重要服务：</p>
-<ul>
-<li>主机别名</li>
-<li>邮件服务器别名</li>
-<li>负载分配</li>
-</ul>
-<p><strong>存在三种DNS服务器：根DNS服务器、顶级域DNS服务器和权威DNS服务器；</strong><br>举例说明，其工作的普遍流程：一个DNS客户端，希望获得<a target="_blank" rel="noopener" href="http://www.baidu.com的ip地址,粗略的说,dns客户端首先和根dns服务器取得联系,它将返回负责解析顶级域名com的服务器的ip地址(或者其集合),客户将同这些服务器之一取得联系,然后顶级域dns服务器建返回baidu.com的权威服务器的ip集合,客户端通过与这些服务器之一取得联系,获得www.baidu.com的ip地址./">www.baidu.com的IP地址，粗略的说，DNS客户端首先和根DNS服务器取得联系，它将返回负责解析顶级域名com的服务器的IP地址（或者其集合），客户将同这些服务器之一取得联系，然后顶级域DNS服务器建返回baidu.com的权威服务器的IP集合，客户端通过与这些服务器之一取得联系，获得www.baidu.com的IP地址。</a></p>
-<p>DNS查询有两种，<strong>一种是递归查询一种是迭代查询</strong>；实践中，查询通常满足这样的模式：从请求主机到本地DNS服务器的查询是递归的，其余查询是迭代的。所谓迭代就是，如果请求的接收者不知道所请求的内容，那么接收者将扮演请求者，发出有关请求，直到获得所需要的内容，然后将内容返回给最初的请求者。也就是说，在递归查询中，一定要给请求者想要的答案；迭代查询则是指，如果接收者没有请求者所需要的准确内容，接收者将告诉请求者，如何去获得，但是自己并不去发出请求。</p>
-<p>DNS本地缓存：。。。</p>
-<h4 id="P2P"><a href="#P2P" class="headerlink" title="P2P"></a>P2P</h4><p>BitTorrent 是一种用于文件分发的流行P2P协议；用BitTorrent的术语来说，参与一个特定文件分发的所有对等方的集合被称为一个洪流；在一个洪流中的对等方彼此下载等长度的文件块；当一个对等方下载文件块的时候，也向其他对等方发送了多个块；一旦某对等方获得了完整文件，就可以自私地离开洪流或者大公无私地留下来继续向其他对等方发送文件.</p>
-<h3 id="第三章-传输层"><a href="#第三章-传输层" class="headerlink" title="第三章 传输层"></a>第三章 传输层</h3><p>UDP（用户数据报协议）它提供一种不可靠、无连接的服务；另一种是TCP，它提供可靠的，面向连接的服务；运输层分组也被称为报文段；</p>
-<p>UDP有以下好处：</p>
-<ol>
-<li>关于何时、发送什么数据的应用层控制更为精细：这是因为一旦应用程序将数据交给UDP，UDP就会打包将其发送给网络层，不会受到传输层的调节，这在一些实时应用中比较实用；当然，应用程序还可以通过UDP+自主开发一些功能的模式来扩展UDP。</li>
-<li>无需建立连接：所以就不会引入额外的时延。这也可能是DNS使用UDP而不是TCP的主要原因，如果使用TCP的话，DNS服务将会慢很多；HTTP使用TCP的主要原因是对TCP的可靠性的依赖超过对速度的要求；</li>
-<li>无需维护连接状态：TCP为了实现可靠数据传输和拥塞控制需要在端系统中维护一些参数，这些参数包括：接收和发送的缓存、拥塞控制参数、确认号和序号；这些参数信息都是必须的；而UDP因为不建立连接，所以自然也就不需要维护这些状态，这就减少了时空开销；</li>
-<li>分组首部更小：TCP有20字节的首部开销，而UDP只有8字节；</li>
-</ol>
-<p>这些应用程序使用了TCP作为其传输层协议：电子邮件、远程终端访问、Web、文件传输；这些应用通常使用UDP作为其传输层协议：远程文件服务器、网络管理（因为这里应用即便在网络处于拥塞的情况下仍要工作，所以UDP更为合适）、路由选择协议和名称转换（DNS）；这些应用两个都有使用：流式多媒体、因特网电话等多媒体应用；这些应用对实时性的要求较高同时对可靠性的要求又不是很高，所以既可以使用UDP也可以使用TCP协议。</p>
-<p>UDP首部只有4个字段，每个字段占用两个字节，分别是：源端口号、目的端口号、长度和校验和；其中，长度表示包含首部在内的UDP报文段长度，以字节为单位；校验和字段用来计算报文段在传输的过程中是否出现了差错</p>
-<h3 id="面向连接原理"><a href="#面向连接原理" class="headerlink" title="面向连接原理"></a>面向连接原理</h3><p>TCP提供全双工服务，并且是点对点的；TCP协议无法提供“多播”服务，一条TCP连接只关联一个发送方和接收方（当然，发送方也是接收方）；<br><strong>三次握手，前两次报文段不承载“有效负载”，第三次握手的时候，报文段是可以装载“有效负载”的</strong><br>TCP报文段结构，从整体上来说由首部+数据字段组成；其中数据字段来自应用层，其长度不能大于MSS；首部的常规长度为20字节，但是值得注意的是，TCP首部是可变长的；TCP首部是以32比特为单位组织的</p>
-<p>一条TCP连接可以采取任意数字作为初始序号，这样可以减少将那些残存在网络中的报文段误认为是新建连接的报文段（新旧连接恰巧采用了相同端口）</p>
-<p>一个报文段的序号就是该报文段数据字段首字节的序号；确认号就是接受主机正在等待接收的数据的下一个字节序号；值得注意的是，服务端对接收端发来的报文段的确认被装载到一个从服务端发往到接收端的报文段中，这种确认被称为“捎带”</p>
-<h3 id="可靠原理"><a href="#可靠原理" class="headerlink" title="可靠原理"></a>可靠原理</h3><blockquote>
-<p>一个可靠数据传输协议，将要面对以下问题：分组丢失、分组损坏到达、分组乱序到达</p>
-</blockquote>
-<blockquote>
-<p>总结可靠传输需要的技术：检验和、序号、定时器、肯定和否定确认分组。</p>
-</blockquote>
-<ul>
-<li>经完全可靠信道的可靠数据传输：rdt 1.0</li>
-<li>经具有比特差错信道的可靠数据传输：rdt 2.0</li>
-<li>rdt 2.0 中有一个致命的缺陷，就是没有考虑到 ACK 和 NAK 分组受损的可能性。<br>  考虑ACK和NAK受损的个两可能性：<br>  增加足够的校验和比特<br>  当接受到模糊不清的ACK和NAK分组时，只需要重传当前数据分组。这引入了冗余分组</li>
-<li>rdt 2.2 是在有比特差错信道上实现的一个无NAK的可靠数据传输协议。<br>  rdt 2.1和rdt 2.2的区别在于，接收方此时必须包括由一个ACK报文所确认的分组序号</li>
-<li>经具有比特差错的丢包信道的可靠数据传输：rdt3.0</li>
-</ul>
-<p>rdt 3.0 是一个功能正确的协议，但是由于它是一个停等协议，大部分的时间都浪费在等待确认上面，所以性能不好。<br>解决这种特殊性能问题的一个简单的方法是：不使用停等方式运行，允许发送方发送多个分组而无需等待确认。这种技术被称为 流水线。</p>
-<p>要使用流水线技术，则须：</p>
-<ul>
-<li>增加序号范围。因为要传送多个分组，而每个传输中的分组必须有一个单独的序号。</li>
-<li>协议的发送方和接收方两端必须能缓存多个分组。发送方至少得能缓存那些已发送但未确认的分组，而接收方或许也需要缓存那些已经正确接收的分组。</li>
-<li>所需序号的范围和对缓冲的要求取决于数据传输协议如何处理丢失、损坏及延时过大的分组。</li>
-</ul>
-<p>流水线的差错恢复有两种基本方法：</p>
-<ul>
-<li>回退 N 步</li>
-<li>选择重传</li>
-</ul>
-<h4 id="回退N步"><a href="#回退N步" class="headerlink" title="回退N步"></a>回退N步</h4><p>全部序号就被划分为0-base-1，这一部分的分组是已发送且收到接收方确认的分组，base<del>next-1这一部分的分组是已发送但是尚未收到确认的，其中base是尚未收到确认的最小序号；next-1</del>base+N-1表示当前发送方可以使用的序号，表示一种发送能力；当发送方收到确认号为base的确认分组后就会向前移动窗口，所以回退N步也被称为滑动窗口协议</p>
-<ul>
-<li>上层调用：检查next Sequence是否在窗口之内，如果在，这说明发送方还有发送能力，发送之；</li>
-<li>收到ACK：回退N步策略对序号为n的分组采取累积确认的方式，即当收到序号为n的ACK时，表明序号小于等于n的分组全部到位；发送方收到的ACK毕竟来自接收方，收到ACK的情况还得看接收方如何发送；</li>
-<li>超时事件：如果发生超时事件，那么发送方会重发所有已发送但是未确认的分组，即分组号在base和next sequence-1之间的所有分组；这也是为什么叫“回退N步”，如果收到一个ACK，则定时器会重行启动；如果没有待确认的分组，定时器将被终止；</li>
-</ul>
-<h4 id="选择重传"><a href="#选择重传" class="headerlink" title="选择重传"></a>选择重传</h4><p>接收方将确认一个正确接收的分组而不管其是否按序；失序的分组被缓存，直到形成连续数据后将其提交给上层；值得注意的是，如果接收方收到了已经确认的分组，则说明确认ACK丢失，或者时延太长，接收方和发送方沟通不及时；这也表明了关于那些分组到位了，那些分组还没到位，接收方和发送方有着不一样的视图。</p>
-<p>另外还需要注意的是，序号的重用问题，如果在分组中序号字段的位数为k，那么最大的序号为2^k-1，所以有可能不同分组同时占用一个序号，为了避免这种情况，需要做的是控制分组的生命周期。窗口长度必须小于或等于序号空间大小的一半。</p>
-<h4 id="往返时间的估计与超时"><a href="#往返时间的估计与超时" class="headerlink" title="往返时间的估计与超时"></a>往返时间的估计与超时</h4><p>TCP一般来说通过Estimated RTT=(1-a)Estimated RTT+a*Sample RTT来计算因路由器的拥塞和端系统负载变化所导致变化的RTT。a一般取1/8；因为Estimated RTT表示最近的网络状况，所以其理应得到较大的权值；这种方法也被称为指数加权移动平均</p>
-<p>除了估计RTT外，计算RTT的变化也是ok的，DevRTT =(1-b)DevRTT+b*|Sample RTT-Estimated RTT|；其中b的推荐值为0.25；当Sample RTT变化较大的时候，DevRTT的值较大，当Sample RTT变化较小的时候，DevRTT就较小；</p>
-<p>TCP是如何考虑超时时间的呢？该时间因略大于测量的RTT，不易过小——容易引起不必要的重传，也不易过大——网络对于报文段丢失情况的反应就会变慢；最后TCP采用了如下计算方式：Timeout Interval=Estimated RTT+4*Dev RTT；</p>
-<h4 id="超时与重传"><a href="#超时与重传" class="headerlink" title="超时与重传"></a>超时与重传</h4><p>TCP使用超时重传和冗余确认技术来处理超时、丢失等情况；使用确认、序号等技术来保证按序到达；使用校验和来检验是否报文段在传输过程中是否发生了错误；</p>
-<h4 id="超时时间加倍"><a href="#超时时间加倍" class="headerlink" title="超时时间加倍"></a>超时时间加倍</h4><p>在大多数TCP实现中，当发生超时事件时，超时时间并不是从Estimated RTT和Dev RTT推算出来而是直接将超时时间设置为原来的两倍；然而，每当定时器在另两个事件（收到ACK和接收到上层应用数据）发生时，新的超时时间将由上面提到的两个值计算出来；实际上，这是一种形式受限的拥塞控制</p>
-<h4 id="快速重传"><a href="#快速重传" class="headerlink" title="快速重传"></a>快速重传</h4><p>接收方接收到某个报文段时，会检查该报文段是否是按序到达，如果不是，那么接收端会发送对已经收到的最后一个连续报文段的确认，所以如果发送方收到冗余ACK，说明有多个报文段到达了接收端，但不是接收端所期望的——这意味着，很有可能发生了丢失。所以发送方可以在定时器过时之前快速重传所丢失的报文段</p>
-<h3 id="流量控制"><a href="#流量控制" class="headerlink" title="流量控制"></a>流量控制</h3><p>流量控制是一个速度匹配服务：TCP连接的发送方和接收方都各自维护一个缓存，因此两者的数据交换应该在一个合理的速度范围内：不让对方发生数据溢出；TCP为它的应用程序提供了这种服务：流量控制服务。虽然流量控制和拥塞控制所采取的动作非常相似，但是它们的目的很明显并不同。</p>
-<p>在TCP首部中有一个窗口大小字段，TCP连接的双方通过该字段来向对方表明自己的窗口大小，即缓存空间的大小；同样，在TCP连接的两端，各自维护着相关的变量：last Sent、last Acked；在发送方，这两个变量之间的分组就是已经发送但是尚未确认的分组；而在接收方，last Read表示应用进程下一次读取的数据，last Revd表示最后纳入缓存的报文段编号（注意，我们讨论的前提是TCP会将失序到达的报文段丢弃哦~）；通过这些变量以及报文段首部中窗口大小字段，我们就可以对发送速度做一些控制：在发送方last Sent-last Acked应该小于等于接收方的窗口大小；在接收端A=last Received-last Read就是已经使用的空间大小，所以窗口大小=buffer-A；</p>
-<p>如果接收方的窗口大小为0，那么发送端该如何处理呢？接收方在没有ACK或者数据要向发送端发送时，不会通知发送方他的窗口大小已经改变。也就是说，如果应用程序读取了缓存中的数据，发送方是不会知道的，除非它向接收方发送了数据；当接收到窗口大小为0的报文段后，发送方会向接收方间隔发送只有一个字节的数据。</p>
-<h3 id="拥塞控制原理"><a href="#拥塞控制原理" class="headerlink" title="拥塞控制原理"></a>拥塞控制原理</h3><p>计算机网络拥塞的原因是因为网络中的分组太多，而链路带宽和路由器缓存容量都是有限的；</p>
-<ol>
-<li>当分组的到达速率接近链路容量时，分组将经历巨大的排队时延；</li>
-<li>发送方必须执行重传，为缓存溢出而丢弃的分组</li>
-<li>发送方进行的不必要重传会引起路由器转发不必要的分组副本。</li>
-<li>当一个分组沿着一条路径被丢弃时，每个上游路由器的资源被浪费掉了</li>
-</ol>
-<p><strong>拥塞控制：拥塞控制是作用于网络的，它是防止过多的数据注入到网络中，避免出现网络负载过大的情况；</strong><br><strong>流量控制：流量控制是作用于接收者的，它是控制发送者的发送速度从而使接收者来得及接收。</strong></p>
-<p>依据网络层是否提供显式支持，将拥塞控制分为：<strong>端到端拥塞控制、网络辅助拥塞控制</strong><br>TCP必须使用端到端的拥塞控制而不是网络辅助的拥塞控制，因为IP并不会向端系统提供显式的网络拥塞反馈；<br>TCP所采用的方法是让每一个发送方根据其所感知的网络拥塞程度来限制其能向连接发送流量的速率；如果TCP判断网络通畅，那么它会提高发送速率，如果TCP判断网络拥塞，那么它会限制发送速率；需要解决三个问题：</p>
-<ol>
-<li>TCP如何限制发送速率？</li>
-<li>TCP如何感知网络拥塞程度？</li>
-<li>TCP该以何种算法改变其发送速率？</li>
-</ol>
-<p>我们将TCP发送方的丢包事件定义为：要么超时，要么收到接收方的3个冗余ACK；如果网路拥塞，那么网络中的路由器就会发生缓存溢出，进而导致数据报被丢弃，然后就会引起发送方的丢包事件；此时，TCP发送方就可以认为TCP连接出现了拥塞<br>另外，TCP将接收方发送的ACK视为网络通畅的标志，如果ACK到达的速率较高，那么TCP的拥塞窗口就会以较高的速率扩大，如果ACK到达的速率较慢，那么TCP拥塞窗口的增加速度也会较慢；因为TCP使用ACK对拥塞窗口做出调节，所以也别称为自计时的；<br>一个丢失的报文段意味着拥塞，因此当丢失报文段时应当降低TCP发送方的速率；<br>    一个确认报文段指示该网络正在向接收方交付发送方的报文段，因此，当收到对先前报文段的确认时，可以增加发送方的速率；<br>    带宽检测；TCP调节器传输速率的策略是增加其速率以响应到达的ACK，除非出现丢包，此时才减少发送速率；以为网络中没有明确的拥塞控制状态信令，ACK和丢包事件充当了隐式信号.</p>
-<p>tcp拥塞算法主要包含三个部分：<strong>慢启动、拥塞避免、快速恢复</strong></p>
-<p>TCP连接在开始的时候，其cwnd常设置为一个MSS，然后在慢启动状态每收到一个ACK，cwnd就增加一个MSS；这样的话，在慢启动阶段，发送速率是指数增加的（1,2,4,8…）<br>在慢启动阶段，如果发生了超时事件，那么ssthresh就被设置为当前cwnd的一半，然后将cwnd置为1；当cwnd逐步增加到ssthresh时，再翻倍增加cwnd就有一点鲁莽了，所以此时TCP结束慢启动，进入拥塞避免模式。在拥塞避免模式里，TCP将更谨慎地增加cwnd；如果收到冗余ACK，那么TCP会做一次快速重传，然后进入快速恢复阶段；</p>
-<h4 id="慢启动"><a href="#慢启动" class="headerlink" title="慢启动"></a>慢启动</h4><p>指数增长。这里慢启动指的起点低，而不是增长慢</p>
-<h4 id="拥塞避免"><a href="#拥塞避免" class="headerlink" title="拥塞避免"></a>拥塞避免</h4><p>将cwnd减半，然后线性增长</p>
-<h4 id="快速恢复"><a href="#快速恢复" class="headerlink" title="快速恢复"></a>快速恢复</h4><p>在快速恢复阶段，对于引起TCP进入该状态的缺失报文段，每收到一个ACK，cwnd增加一个MSS<br>当对丢失报文段的一个ACK到达时，TCP降低cwnd后进入拥塞避免状态；如果出现超时事件，快速恢复在执行如同慢启动和拥塞避免中相同动作后，进入慢启动状态.</p>
-<h3 id="第四章-网络层"><a href="#第四章-网络层" class="headerlink" title="第四章 网络层"></a>第四章 网络层</h3><p>网络层的作用：将分组从一台发送主机移动到一台接收主机。需要两种功能：<br>        转发：当一个分组到达路由器的一条输入链路时，路由器必须将该分组移动到适当的输出链路<br>        路由选择：分组从发送方流向接收方时，网络层必须决定这些分组采用的路由或路径，路由选择算法<br>每台路由器都有一张转发表</p>
-<p>因特网的网络层IP协议提供单一服务，尽力而为服务，无带宽保证，无丢包保证，无顺序保证，不定时，无拥塞指示。</p>
-<p>仅在网络层提供连接服务的计算机网络成为虚电路；仅在网络层提供无连接服务的计算机网络称为数据报网络。</p>
-<h4 id="路由器的组成"><a href="#路由器的组成" class="headerlink" title="路由器的组成"></a>路由器的组成</h4><p>路由器的组成部分</p>
-<ul>
-<li>输入端口：<br>  执行将一条输入的物理链路与路由器相连接的物理层功能<br>  执行与位于入链路远端的数据链路层交互的数据链路层功能<br>  查找功能，查询转发表决定路由器的输出端口，将分组转发到输出端口</li>
-<li>交换结构<br>  将路由器的输入端口与输出端口相连<br>  分组通过交换结构转发到输出端口</li>
-<li>输出端口<br>  存储从交换结构接收的分组，执行必要的链路层和物理层功能在输入链路上传输这些分组。<br>  当链路是双向的时，输出端口与输入端口在同一线路卡成对出现</li>
-<li>路由选择处理器<br>  执行路由选择协议<br>  维护路由选择表、连接的链路状态信息，为路由器计算转发表</li>
-<li>路由转发平面<br>  一台路由器的输入端口、输出端口和交换结构共同实现了转发功能，并且用硬件实现（软件太慢，需以纳秒时间尺度运行）</li>
-<li>路由控制平面<br>  路由器的控制功能（执行路由选择协议、对上线或者下线链路进行响应、管理功能），在毫秒时间尺度上运行，用软件实现并在选择处理器上执行（一种cpu）</li>
-</ul>
-<p>网络层三个组件</p>
-<pre><code>IP协议
-路由选择协议
-控制报文协议（ICMP）：报告数据报中的差错、对某些网络层信息请求进行响应的设施
-</code></pre>
-<h4 id="Ip地址"><a href="#Ip地址" class="headerlink" title="Ip地址"></a>Ip地址</h4><p>a b c 类地址</p>
-<ol>
-<li><p>获取一块地址<br> 子网获取IP地址：由ISP从它大块地址中分配<br> ISP获取IP地址：IP地址由因特网名字和编号分配机构ICANN管理（也管理DNS根服务器、AS标识号）。ICANN向区域性因特网注册机构分配地址，处理本地域内的地址分配/管理</p>
-</li>
-<li><p>获取主机地址<br> 组织获得一块地址，就可为组织内的主机、路由器接口逐个分配IP地址<br> 主机地址能手动配置，也能自动配置，即动态主机配置协议DHCP</p>
-</li>
-<li><p>动态主机配置协议DHCP—UDP<br> DHCP允许主机自动获取一个IP地址<br> DHCP可配置，可以使主机每次连网获得相同IP地址，也可每次分配一个临时IP地址。<br> DHCP还允许主机查看子网掩码、默认网关（第一跳路由器地址）、本地DNS服务器地址<br> DHCP能将主机连接进一个网络的自动能力，常被称为即插即用协议<br> DHCP是一个客户-服务器协议。新来的主机要获得自使用的IP地址等网络配置信息<br> 每个子网都有一台DHCP服务器<br> 若子网没有DHCP服务器，则由一个路由器做DHCP中继代理，该代理知道该网络的DHCP服务器地址</p>
-<h4 id="DHCP"><a href="#DHCP" class="headerlink" title="DHCP"></a>DHCP</h4><p>新主机到来时，DHCP协议的四个步骤</p>
-</li>
-<li><p>DHCP服务器发现<br> 新到的客户通过广播DHCP发现报文，发现一个要与其交互的DHCP服务器<br> 客户在UDP分组中向端口67发送该发现报文，此时必须用广播地址255.255.255.255，源地址是0.0.0.0</p>
-</li>
-<li><p>DHCP服务器提供<br> DHCP收到DHCP发现报文后，响应一个DHCP提供报文，仍然使用广播地址，因为此时新客户并没有IP地址<br> 可能有多台DHCP服务器，每台服务器提供的报文中，有向客户主机推荐的IP地址、网络掩码以及IP地址租用期（一般几天或几小时）</p>
-</li>
-<li><p>DHCP请求<br> 客户从提供中选一个，向选中的服务器提供一个DHCP请求报文进行响应，回显配置参数</p>
-</li>
-<li><p>DHCP ACK<br> 收到DHCP请求报文后，用DHCP ACK报文对其记性响应，证实所传参数<br> 客户收到ACK后，交互完成，在租期内使用DHCP分配的IP地址。DHCP提供了机制允许客户更新对一个IP地址的租用</p>
-</li>
-</ol>
-<h4 id="NAT"><a href="#NAT" class="headerlink" title="NAT"></a>NAT</h4><p>NAT路由器对外界来看像一个具有单一IP地址的单一设备。例如，家里有一个NAT使能路由器，其IP地址138.76.29.7，且进入和离开家庭的报文都有同样的该地址<br>NAT路由器对外隐藏了家庭网络的细节<br>NAT路由器从ISP的DHCP服务器得到它的地址，并且路由器运行一个DHCP服务器，为位于NAT-DHCP路由器控制的家庭网络地址空间中的主机提供地址</p>
-<h4 id="ICMP"><a href="#ICMP" class="headerlink" title="ICMP"></a>ICMP</h4><p>CMP被主机和路由器用来沟通网络层信息，如差错报告<br>如『目的网络不可到达』这种错误是在ICMP产生的，IP路由器找不到路径通往指定主机，该路由器就向发送主机发出ICMP报文指示错误<br>ICMP通常被认为是IP的一部分，但从体系结构上来讲它是位于IP之上的，因为ICMP报文是承载在IP分组中的。也就是说，ICMP报文是作为IP有效载荷承载的。</p>
-<h3 id="路由选择算法"><a href="#路由选择算法" class="headerlink" title="路由选择算法"></a>路由选择算法</h3><ol>
-<li><p>第一种分类方法：</p>
-<ul>
-<li><strong>全局式路由选择算法</strong><br>  用完整、全局性的网络信息计算出最短路径（最低费用路径）<br>  practically具有全局状态信息的算法称作链路状态算法（LS）</li>
-<li><strong>分散式路由选择算法</strong><br>  迭代、分布式的方式计算最短路径<br>  没有结点拥有关于网络链路的完整信息，每个结点仅有与其直接相连链路的信息即可工作<br>  通过迭代计算并与相邻结点交换信息，逐渐计算出最低费用路径，距离向量算法（DV）</li>
-</ul>
-</li>
-<li><p>第二种分类方法：</p>
-<ul>
-<li><strong>静态路由选择算法</strong><br>  变化缓慢，通常人工干预</li>
-<li><strong>动态路由选择算法</strong><br>  网络流量负载或拓扑发生变化时改变路由选择路径<br>  周期性运行或直接响应变化<br>  也容易受路由选择循环、路由震荡等问题的影响</li>
-</ul>
-</li>
-<li><p>第三种分类方法：</p>
-<ul>
-<li><strong>负载敏感算法</strong><br>  链路费用动态变化来反映链路拥塞水平</li>
-<li><strong>负载迟钝算法</strong><br>  链路费用与拥塞无关，当今因特网路由选择算法基本都是迟钝的</li>
-</ul>
-</li>
-</ol>
-<h4 id="链路状态路由选择算法LS"><a href="#链路状态路由选择算法LS" class="headerlink" title="链路状态路由选择算法LS"></a>链路状态路由选择算法LS</h4><p>网络拓扑和所有链路费用已知。实践中是由每个节点向网络其他所有节点广播链路状态分组完成的，例如OSPF路由选择协议由链，路状态广播算法完成<br>所有节点都具有该网络的信息，每个节点运行LS算法<br>Dijkstra算法<br><strong>会产生路由震荡，可以让每台路由器发送链路通告的时间随机化</strong></p>
-<h4 id="距离向量路由算法DV"><a href="#距离向量路由算法DV" class="headerlink" title="距离向量路由算法DV"></a>距离向量路由算法DV</h4><p><strong>迭代、异步、分布式</strong></p>
-<ul>
-<li>分布式：每个结点要从一个或多个直接相连邻居接收某些信息，计算，将计算结果发给邻居</li>
-<li>迭代：过程持续到邻居之间无更多信息交换</li>
-<li>异步：不要求所有节点相互步伐一致操作</li>
-</ul>
-<p>DV算法<br>    Bellman-Ford方程<br>    无更新报文发送，不会出现进一步路由选择表计算，算法进入静止状态。直到一条链路费用发生改变</p>
-<p>路由选择环路，无穷计数问题<br>增加毒性逆转<br>    欺骗费用无穷大。如果z通过y路由选择到目的地x，则z通告y，它（z）到x的距离是无限大。<br>    解决两个直接相连无穷计数问题，更多结点环路无法解决</p>
-<h4 id="LS与DV路由选择算法的比较"><a href="#LS与DV路由选择算法的比较" class="headerlink" title="LS与DV路由选择算法的比较"></a>LS与DV路由选择算法的比较</h4><ul>
-<li><strong>报文复杂性</strong><br>  显然LS复杂得多，每条链路费用改变都要通知所有结点</li>
-<li><strong>收敛速度</strong><br>  DV算法收敛较慢，且会遇到路由选择环路和无穷计数问题</li>
-<li><strong>健壮性</strong><br>  路由器发生故障，LS结点仅计算自己的转发表，提供了一定健壮性<br>  DV算法一个 不正确的结点会扩散到整个网络</li>
-</ul>
-<h4 id="层次路由选择"><a href="#层次路由选择" class="headerlink" title="层次路由选择"></a>层次路由选择</h4><p>当路由器数目变得很大，算法开销高的不可实现如LS更新链路费用<br>管理自治。一个组织应该当按自己愿望运行管理其网络<br>解决方法：将路由器组织进自治系统AS<br>每个AS由一组处在相同管理控制下的路由器组成（如相同的ISP运营）<br>相同AS中路由器全部运行同样的路由选择算法，叫做自治系统内部路由选择协议<br>一个AS内一台或多台路由器负责向本AS之外的目的地转发分组，这些路由器称为网关路由器当有多台网关路由器，需要用到自制系统间路由选择协议来配置转发表<br>因特网中所有AS中都运行相同的AS间路由选择协议BGP4</p>
-<p>每台路由器接收来自一个AS内部路由选择协议和一个AS间路由选择协议的信息，并使用来自这两个协议的信息配置它的转发表。<br>某AS非网关路由器对转发表增加用于子网x（该AS外）的表项采取的动作：<br>从AS间协议知道经多个网关可达子网x<br>使用AS内部协议的路由选择信息，决定到每个网关的最低费用路径的费用<br>热土豆路由选择：选择具有最小的最低费用的网关<br>从转发表确定最低费用网关接口I，将（x,I）添加到转发表中<br>如果AS从一个相邻AS处知道一个目的地，该AS能向它某些其他相邻AS通告该路由选择信息<br>一个ISP可能分为多个互联的AS</p>
-<h3 id="具体路由算法"><a href="#具体路由算法" class="headerlink" title="具体路由算法"></a>具体路由算法</h3><p>AS内部路由选择协议，又称内部网关协议<br>路由选择信息协议RIP，通常设置在下层ISP中<br>开放最短优先OSPF，通常设置在上层ISP中</p>
-<h4 id="AS-自治系统-内部的路由选择：RIP（DV思想）"><a href="#AS-自治系统-内部的路由选择：RIP（DV思想）" class="headerlink" title="AS(自治系统)内部的路由选择：RIP（DV思想）"></a>AS(自治系统)内部的路由选择：RIP（DV思想）</h4><h4 id="AS内部的路由选择：OSPF（LS思想）"><a href="#AS内部的路由选择：OSPF（LS思想）" class="headerlink" title="AS内部的路由选择：OSPF（LS思想）"></a>AS内部的路由选择：OSPF（LS思想）</h4><h4 id="AS间的路由选择：BGP"><a href="#AS间的路由选择：BGP" class="headerlink" title="AS间的路由选择：BGP"></a>AS间的路由选择：BGP</h4><h4 id="多播"><a href="#多播" class="headerlink" title="多播"></a>多播</h4><p>rpf igmp</p>
-<h3 id="第五章-链路层"><a href="#第五章-链路层" class="headerlink" title="第五章 链路层"></a>第五章 链路层</h3><h4 id="差错检测和纠正技术"><a href="#差错检测和纠正技术" class="headerlink" title="差错检测和纠正技术"></a>差错检测和纠正技术</h4><pre><code>奇偶校验（描述差错检测和纠正背后的思想）
-检验和方法（应用于运输层）
-循环冗余检测（应用在适配器中的链路层）
-</code></pre>
-<h4 id="多路访问链路协议"><a href="#多路访问链路协议" class="headerlink" title="多路访问链路协议"></a>多路访问链路协议</h4><p> 多路访问问题<br>    如何协调多个发送和接收结点对一个共享广播信道的访问<br>    所有结点都能传输帧，多个结点可能会同时传输帧，所有结点同时接到多个帧，传输的帧在所有接收方出碰撞了，发生碰撞时，所有帧丢失</p>
-<ul>
-<li>信道划分协议<br>  TDM FDM CDMA</li>
-<li>随机接入协议<br>  ALOHA CSMA CSMA/CD</li>
-<li>轮流协议<br>  轮询 令牌传递 DOCISIS</li>
-</ul>
-<h3 id="交换局域网"><a href="#交换局域网" class="headerlink" title="交换局域网"></a>交换局域网</h3><h4 id="ARP"><a href="#ARP" class="headerlink" title="ARP"></a>ARP</h4><p>提供ip地址 mac地址的转换<br>即插即用</p>
-<h4 id="发送数据到子网外"><a href="#发送数据到子网外" class="headerlink" title="发送数据到子网外"></a>发送数据到子网外</h4><p>路由器有几个接口，就有几个IP地址、ARP模块和适配器，假设一个路由器连着两个子网A、B<br>子网A中的适配器要发往子网B中的适配器，先通过子网A的ARP把数据报发到子网A跟子网B相连的路由器（目的地址是路由器的MAC），路由器通过子网B的ARP将该数据报转发给目的适配器（目的地址是最终目的地的MAC）。</p>
-<h4 id="交换机"><a href="#交换机" class="headerlink" title="交换机"></a>交换机</h4><p>假定目的地址为DD-DD-DD-DD-DD-DD的帧从交换机接口x到达，交换机用该MAC地址索引交换机表，有三种可能：</p>
-<ol>
-<li>表中没有该地址，交换机广播该帧</li>
-<li>表中有表项将该地址与接口x联系起来，过滤掉，因为该帧从x来，DD也通过x去，说明该帧跟DD适配器在同一个局域网段，该帧已经在包含目的地的局域网网段广播过了</li>
-<li>表中有表象将该地址与接口y≠x联系起来，该帧需要被转发到与接口y相连的局域网段，放到接口y前的输出缓存，完成转发功能</li>
-</ol>
-<h4 id="链路层交换机的性质"><a href="#链路层交换机的性质" class="headerlink" title="链路层交换机的性质"></a>链路层交换机的性质</h4><ol>
-<li>消除碰撞<br> 交换机缓存帧并且不会在网段上同时传输多于一个帧，交换机提供了比广播链路局域网高的多的性能改善</li>
-<li>异质的链路<br> 交换机将链路彼此隔离，因此局域网中的不同链路能够以不同速率运行，在不同媒介上运行</li>
-<li>网络管理<br> 主动断开异常适配器<br> 收集带宽使用的统计数据、碰撞率和流量类型，这些信息用来调试解决问题</li>
-</ol>
-<h4 id="路由器和交换机对比"><a href="#路由器和交换机对比" class="headerlink" title="路由器和交换机对比"></a>路由器和交换机对比</h4><p>路由器是第三层的分组交换机，交换机是第二层的分组交换机<br><strong>交换机：</strong></p>
-<ul>
-<li>交换机即插即用，相对高的分钟过滤和转发速率</li>
-<li>防止广播帧循环，交换网络的活跃拓扑限制为一颗生成树</li>
-<li>大型交换网络要求在主机和路由器中有大的ARP表，生成大量ARP流量和处理量</li>
-<li>对广播风暴不提供任何保护，使得以太网崩溃</li>
-<li><em>路由器：</em>*</li>
-<li>分组不会被限制到生成树上，可以使用源到目的地的最佳路径，拓扑结构更加丰富</li>
-<li>对第二层的广播风暴提供了防火墙保护</li>
-<li>不是即插即用，需要人为配置IP地址</li>
-<li>对分组处理时间较长，因为必须处理第三层字段</li>
-</ul>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -1287,129 +903,11 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/05/06/%E8%AE%B0%E5%BD%95%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BD%BF%E7%94%A8-md/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2021/05/06/%E8%AE%B0%E5%BD%95%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BD%BF%E7%94%A8-md/" itemprop="url">记录第一次使用</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-05-06T02:18:01+08:00">2021-05-06</time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>今天第一次用hexo搭建了blog</p>
-<p>以后会陆续在上面更新自己学到的技术，欢迎大佬指正交流</p>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -1417,6 +915,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -1437,8 +939,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -1480,6 +991,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-%E5%AF%BC%E8%AE%BA"><span class="nav-number">1.</span> <span class="nav-text">第一章 导论</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84"><span class="nav-number">2.</span> <span class="nav-text">第二章 操作系统结构</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B3%BB%E7%BB%9F%E8%B0%83%E7%94%A8"><span class="nav-number">2.1.</span> <span class="nav-text">系统调用</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%B3%BB%E7%BB%9F%E8%B0%83%E7%94%A8%E7%B1%BB%E5%9E%8B"><span class="nav-number">2.1.1.</span> <span class="nav-text">系统调用类型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%B3%BB%E7%BB%9F%E7%A8%8B%E5%BA%8F%E5%88%86%E7%B1%BB"><span class="nav-number">2.1.2.</span> <span class="nav-text">系统程序分类</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84"><span class="nav-number">2.2.</span> <span class="nav-text">操作系统结构</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%86%E5%B1%82%E6%96%B9%E6%B3%95"><span class="nav-number">2.2.1.</span> <span class="nav-text">分层方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BE%AE%E5%86%85%E6%A0%B8"><span class="nav-number">2.2.2.</span> <span class="nav-text">微内核</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%A8%A1%E5%9D%97"><span class="nav-number">2.2.3.</span> <span class="nav-text">模块</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0-%E8%BF%9B%E7%A8%8B"><span class="nav-number">3.</span> <span class="nav-text">第三章 进程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E6%A6%82%E5%BF%B5"><span class="nav-number">3.1.</span> <span class="nav-text">进程概念</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B"><span class="nav-number">3.1.1.</span> <span class="nav-text">进程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E7%8A%B6%E6%80%81"><span class="nav-number">3.1.2.</span> <span class="nav-text">进程状态</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E6%8E%A7%E5%88%B6%E5%9D%97%EF%BC%88PCB%EF%BC%89"><span class="nav-number">3.1.3.</span> <span class="nav-text">进程控制块（PCB）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E8%B0%83%E5%BA%A6"><span class="nav-number">3.2.</span> <span class="nav-text">进程调度</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%B0%83%E5%BA%A6%E9%98%9F%E5%88%97"><span class="nav-number">3.2.1.</span> <span class="nav-text">调度队列</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%B0%83%E5%BA%A6%E7%A8%8B%E5%BA%8F"><span class="nav-number">3.2.2.</span> <span class="nav-text">调度程序</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E8%B0%83%E5%BA%A6-1"><span class="nav-number">3.3.</span> <span class="nav-text">进程调度</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E5%88%9B%E5%BB%BA"><span class="nav-number">3.3.1.</span> <span class="nav-text">进程创建</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E7%BB%88%E6%AD%A2"><span class="nav-number">3.3.2.</span> <span class="nav-text">进程终止</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1"><span class="nav-number">3.4.</span> <span class="nav-text">进程间通信</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0-%E7%BA%BF%E7%A8%8B"><span class="nav-number">4.</span> <span class="nav-text">第四章 线程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A6%82%E8%BF%B0"><span class="nav-number">4.1.</span> <span class="nav-text">概述</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%A4%9A%E7%BA%BF%E7%A8%8B%E4%BC%98%E7%82%B9"><span class="nav-number">4.1.1.</span> <span class="nav-text">多线程优点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%A4%9A%E7%BA%BF%E7%A8%8B%E6%A8%A1%E5%9E%8B"><span class="nav-number">4.1.2.</span> <span class="nav-text">多线程模型</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%9A%E7%BA%BF%E7%A8%8B%E9%97%AE%E9%A2%98"><span class="nav-number">4.2.</span> <span class="nav-text">多线程问题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#fork-exec"><span class="nav-number">4.2.1.</span> <span class="nav-text">fork() exec()</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BA%BF%E7%A8%8B%E5%8F%96%E6%B6%88"><span class="nav-number">4.3.</span> <span class="nav-text">线程取消</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B9%B6%E5%8F%91%E4%B8%8E%E5%B9%B6%E8%A1%8C"><span class="nav-number">4.4.</span> <span class="nav-text">并发与并行</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B1%E4%BA%AB"><span class="nav-number">4.5.</span> <span class="nav-text">共享</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%A1%AC%E4%B8%AD%E6%96%AD-%E8%BD%AF%E4%B8%AD%E6%96%AD"><span class="nav-number">4.5.1.</span> <span class="nav-text">硬中断 软中断</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AD%A4%E5%84%BF%E8%BF%9B%E7%A8%8B-%E5%83%B5%E5%B0%B8%E8%BF%9B%E7%A8%8B"><span class="nav-number">4.5.2.</span> <span class="nav-text">孤儿进程 僵尸进程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BF%A1%E5%8F%B7"><span class="nav-number">4.5.3.</span> <span class="nav-text">信号</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#TLS-%E7%BA%BF%E7%A8%8B%E5%B1%80%E9%83%A8%E5%AD%98%E5%82%A8-thread-local-storage"><span class="nav-number">4.5.4.</span> <span class="nav-text">TLS 线程局部存储 thread local storage</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%BA%94%E7%AB%A0-CPU%E8%B0%83%E5%BA%A6"><span class="nav-number">5.</span> <span class="nav-text">第五章 CPU调度</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8A%A2%E5%8D%A0%E8%B0%83%E5%BA%A6"><span class="nav-number">5.0.1.</span> <span class="nav-text">抢占调度</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%86%E6%B4%BE%E7%A8%8B%E5%BA%8F"><span class="nav-number">5.0.2.</span> <span class="nav-text">分派程序</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B0%83%E5%BA%A6%E5%87%86%E5%88%99"><span class="nav-number">5.1.</span> <span class="nav-text">调度准则</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B0%83%E5%BA%A6%E7%AE%97%E6%B3%95"><span class="nav-number">5.2.</span> <span class="nav-text">调度算法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E5%85%AD%E7%AB%A0-%E8%BF%9B%E7%A8%8B%E5%90%8C%E6%AD%A5"><span class="nav-number">6.</span> <span class="nav-text">第六章 进程同步</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%83%8C%E6%99%AF"><span class="nav-number">6.1.</span> <span class="nav-text">背景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%B4%E7%95%8C%E5%8C%BA"><span class="nav-number">6.2.</span> <span class="nav-text">临界区</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#peterson-%E7%AE%97%E6%B3%95"><span class="nav-number">6.3.</span> <span class="nav-text">peterson 算法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A1%AC%E4%BB%B6%E5%90%8C%E6%AD%A5"><span class="nav-number">6.4.</span> <span class="nav-text">硬件同步</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BF%A1%E5%8F%B7%E9%87%8F"><span class="nav-number">6.5.</span> <span class="nav-text">信号量</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%B3%BB%E7%BB%9F%E8%A1%A8"><span class="nav-number">6.5.1.</span> <span class="nav-text">系统表</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%8F%E5%85%B8%E5%90%8C%E6%AD%A5%E9%97%AE%E9%A2%98"><span class="nav-number">6.6.</span> <span class="nav-text">经典同步问题</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%B8%83%E7%AB%A0-%E6%AD%BB%E9%94%81"><span class="nav-number">7.</span> <span class="nav-text">第七章 死锁</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%BB%E9%94%81%E7%89%B9%E5%BE%81"><span class="nav-number">7.1.</span> <span class="nav-text">死锁特征</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BF%85%E8%A6%81%E6%9D%A1%E4%BB%B6"><span class="nav-number">7.1.1.</span> <span class="nav-text">必要条件</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%BB%E9%94%81%E5%A4%84%E7%90%86%E6%96%B9%E6%B3%95"><span class="nav-number">7.2.</span> <span class="nav-text">死锁处理方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%BB%E9%94%81%E9%A2%84%E9%98%B2"><span class="nav-number">7.3.</span> <span class="nav-text">死锁预防</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BA%92%E6%96%A5"><span class="nav-number">7.3.1.</span> <span class="nav-text">互斥</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8D%A0%E6%9C%89%E5%B9%B6%E7%AD%89%E5%BE%85"><span class="nav-number">7.3.2.</span> <span class="nav-text">占有并等待</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%9D%9E%E6%8A%A2%E5%8D%A0"><span class="nav-number">7.3.3.</span> <span class="nav-text">非抢占</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BE%AA%E7%8E%AF%E7%AD%89%E5%BE%85"><span class="nav-number">7.3.4.</span> <span class="nav-text">循环等待</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%BB%E9%94%81%E9%81%BF%E5%85%8D"><span class="nav-number">7.4.</span> <span class="nav-text">死锁避免</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%89%E5%85%A8%E7%8A%B6%E6%80%81"><span class="nav-number">7.4.1.</span> <span class="nav-text">安全状态</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%B5%84%E6%BA%90%E5%88%86%E9%85%8D%E5%9B%BE%E7%AE%97%E6%B3%95"><span class="nav-number">7.4.2.</span> <span class="nav-text">资源分配图算法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%93%B6%E8%A1%8C%E5%AE%B6%E7%AE%97%E6%B3%95"><span class="nav-number">7.4.3.</span> <span class="nav-text">银行家算法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%BB%E9%94%81%E6%81%A2%E5%A4%8D"><span class="nav-number">7.5.</span> <span class="nav-text">死锁恢复</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E5%85%AB%E7%AB%A0-%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86"><span class="nav-number">8.</span> <span class="nav-text">第八章 内存管理</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E7%A1%AC%E4%BB%B6"><span class="nav-number">8.0.1.</span> <span class="nav-text">基本硬件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9C%B0%E5%9D%80%E7%BB%91%E5%AE%9A"><span class="nav-number">8.0.2.</span> <span class="nav-text">地址绑定</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%80%BB%E8%BE%91%E5%9C%B0%E5%9D%80%E7%A9%BA%E9%97%B4%E5%92%8C%E7%89%A9%E7%90%86%E5%9C%B0%E5%9D%80%E7%A9%BA%E9%97%B4"><span class="nav-number">8.0.3.</span> <span class="nav-text">逻辑地址空间和物理地址空间</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8A%A8%E6%80%81%E5%8A%A0%E8%BD%BD%EF%BC%88dynamic-loading%EF%BC%89"><span class="nav-number">8.0.4.</span> <span class="nav-text">动态加载（dynamic loading）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5%EF%BC%88dynamically-linking%EF%BC%89%E4%B8%8E%E5%85%B1%E4%BA%AB%E5%BA%93"><span class="nav-number">8.0.5.</span> <span class="nav-text">动态链接（dynamically linking）与共享库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%9E%E7%BB%AD%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D%EF%BC%88contiguous-memory-allocation%EF%BC%89"><span class="nav-number">8.0.6.</span> <span class="nav-text">连续内存分配（contiguous memory allocation）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%86%85%E5%AD%98%E6%98%A0%E5%B0%84%E4%B8%8E%E4%BF%9D%E6%8A%A4"><span class="nav-number">8.0.7.</span> <span class="nav-text">内存映射与保护</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D"><span class="nav-number">8.0.8.</span> <span class="nav-text">内存分配</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%A2%8E%E7%89%87%EF%BC%88fragmentation%EF%BC%89"><span class="nav-number">8.0.9.</span> <span class="nav-text">碎片（fragmentation）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%86%E9%A1%B5%EF%BC%88paging%EF%BC%89"><span class="nav-number">8.0.10.</span> <span class="nav-text">分页（paging）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95"><span class="nav-number">8.0.11.</span> <span class="nav-text">基本方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%A1%AC%E4%BB%B6%E6%94%AF%E6%8C%81"><span class="nav-number">8.0.12.</span> <span class="nav-text">硬件支持</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BF%9D%E6%8A%A4"><span class="nav-number">8.0.13.</span> <span class="nav-text">保护</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%B1%E4%BA%AB%E9%A1%B5"><span class="nav-number">8.0.14.</span> <span class="nav-text">共享页</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%86%E6%AE%B5%EF%BC%88segmentation%EF%BC%89"><span class="nav-number">8.0.15.</span> <span class="nav-text">分段（segmentation）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95-1"><span class="nav-number">8.0.16.</span> <span class="nav-text">基本方法</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E7%A1%AC%E4%BB%B6"><span class="nav-number">8.0.16.1.</span> <span class="nav-text">硬件</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%AE%B5%E9%A1%B5%E5%BC%8F"><span class="nav-number">8.0.16.2.</span> <span class="nav-text">段页式</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%99%9A%E6%8B%9F%E5%86%85%E5%AD%98"><span class="nav-number">9.</span> <span class="nav-text">虚拟内存</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%83%8C%E6%99%AF-1"><span class="nav-number">9.0.1.</span> <span class="nav-text">背景</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8C%89%E9%9C%80%E8%B0%83%E9%A1%B5"><span class="nav-number">9.0.2.</span> <span class="nav-text">按需调页</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-number">9.0.2.1.</span> <span class="nav-text">基本概念</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%8C%89%E9%9C%80%E8%B0%83%E9%A1%B5%E7%9A%84%E6%80%A7%E8%83%BD"><span class="nav-number">9.0.2.2.</span> <span class="nav-text">按需调页的性能</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%86%99%E6%97%B6%E5%A4%8D%E5%88%B6"><span class="nav-number">9.0.3.</span> <span class="nav-text">写时复制</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%A1%B5%E9%9D%A2%E7%BD%AE%E6%8D%A2"><span class="nav-number">9.0.4.</span> <span class="nav-text">页面置换</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#FIFO%E9%A1%B5%E7%BD%AE%E6%8D%A2"><span class="nav-number">9.0.4.1.</span> <span class="nav-text">FIFO页置换</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%9C%80%E4%BC%98-Optimal-%E7%BD%AE%E6%8D%A2"><span class="nav-number">9.0.4.2.</span> <span class="nav-text">最优(Optimal)置换</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#LRU%EF%BC%88Least-Recently-Used%EF%BC%89%E9%A1%B5%E7%BD%AE%E6%8D%A2"><span class="nav-number">9.0.4.3.</span> <span class="nav-text">LRU（Least Recently Used）页置换</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%BF%91%E4%BC%BCLRU%E9%A1%B5%E7%BD%AE%E6%8D%A2"><span class="nav-number">9.0.4.4.</span> <span class="nav-text">近似LRU页置换</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E9%A1%B5%E7%BC%93%E5%86%B2%E7%AE%97%E6%B3%95"><span class="nav-number">9.0.4.5.</span> <span class="nav-text">页缓冲算法</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B8%A7%E5%88%86%E9%85%8D"><span class="nav-number">9.0.5.</span> <span class="nav-text">帧分配</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%B8%A7%E7%9A%84%E6%9C%80%E5%B0%91%E6%95%B0%E9%87%8F"><span class="nav-number">9.0.5.1.</span> <span class="nav-text">帧的最少数量</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%88%86%E9%85%8D%E7%AE%97%E6%B3%95"><span class="nav-number">9.0.5.2.</span> <span class="nav-text">分配算法</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%85%A8%E5%B1%80%E5%88%86%E9%85%8D%E5%92%8C%E5%B1%80%E9%83%A8%E5%88%86%E9%85%8D"><span class="nav-number">9.0.5.3.</span> <span class="nav-text">全局分配和局部分配</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%B3%BB%E7%BB%9F%E9%A2%A0%E7%B0%B8"><span class="nav-number">9.0.6.</span> <span class="nav-text">系统颠簸</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E7%B3%BB%E7%BB%9F%E9%A2%A0%E7%B0%B8%E7%9A%84%E5%8E%9F%E5%9B%A0"><span class="nav-number">9.0.6.1.</span> <span class="nav-text">系统颠簸的原因</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%86%85%E5%AD%98%E6%98%A0%E5%B0%84%E6%96%87%E4%BB%B6"><span class="nav-number">9.0.7.</span> <span class="nav-text">内存映射文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%86%85%E6%A0%B8%E5%86%85%E5%AD%98%E7%9A%84%E5%88%86%E9%85%8D"><span class="nav-number">9.0.8.</span> <span class="nav-text">内核内存的分配</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F"><span class="nav-number">10.</span> <span class="nav-text">文件系统</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%96%87%E4%BB%B6%E6%A6%82%E5%BF%B5"><span class="nav-number">10.0.1.</span> <span class="nav-text">文件概念</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%96%87%E4%BB%B6%E5%B1%9E%E6%80%A7"><span class="nav-number">10.0.1.1.</span> <span class="nav-text">文件属性</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%96%87%E4%BB%B6%E7%9A%84%E6%93%8D%E4%BD%9C-File-Operations"><span class="nav-number">10.0.1.2.</span> <span class="nav-text">文件的操作(File Operations)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%86%85%E9%83%A8%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84"><span class="nav-number">10.0.1.3.</span> <span class="nav-text">内部文件结构</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%BF%E9%97%AE%E6%96%B9%E6%B3%95"><span class="nav-number">10.0.2.</span> <span class="nav-text">访问方法</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E9%A1%BA%E5%BA%8F%E8%AE%BF%E9%97%AE"><span class="nav-number">10.0.2.1.</span> <span class="nav-text">顺序访问</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E7%9B%B4%E6%8E%A5%E8%AE%BF%E9%97%AE"><span class="nav-number">10.0.2.2.</span> <span class="nav-text">直接访问</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84"><span class="nav-number">10.0.3.</span> <span class="nav-text">目录结构</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%8D%95%E5%B1%82%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84"><span class="nav-number">10.0.3.1.</span> <span class="nav-text">单层目录结构</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%8F%8C%E5%B1%82%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84"><span class="nav-number">10.0.3.2.</span> <span class="nav-text">双层目录结构</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%A0%91%E7%8A%B6%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84"><span class="nav-number">10.0.3.3.</span> <span class="nav-text">树状目录结构</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E5%AE%9E%E7%8E%B0"><span class="nav-number">10.1.</span> <span class="nav-text">文件系统实现</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84"><span class="nav-number">10.1.1.</span> <span class="nav-text">文件系统结构</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1609,6 +1136,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.0"></script>
+
+
 
   
 
