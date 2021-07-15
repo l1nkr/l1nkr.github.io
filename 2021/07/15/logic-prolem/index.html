@@ -123,7 +123,7 @@
 
 
 
-  <title>Archive | Hexo</title>
+  <title>逻辑问题 | Hexo</title>
   
 
 
@@ -142,7 +142,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -240,185 +240,195 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/07/15/logic-prolem/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">逻辑问题</h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-07-15T22:31:41+08:00">2021-07-15</time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-        Um..! 5 posts in total. Keep on posting.
-      </span>
 
-      
-
-        
-        
-        
-
-        
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2021">2021</h1>
-          </div>
-        
-        
+            
+          
 
-        
+          
+          
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2021/07/15/logic-prolem/" itemprop="url">
-              
-                <span itemprop="name">逻辑问题</span>
-              
-            </a>
-        
-      </h2>
+          
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2021-07-15T22:31:41+08:00"
-              content="2021-07-15" >
-          07-15
-        </time>
-      </div>
+          
 
-    </header>
-  </article>
+        </div>
+      </header>
+    
 
-
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2021/07/12/git/" itemprop="url">
-              
-                <span itemprop="name">git</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2021-07-12T18:33:06+08:00"
-              content="2021-07-12" >
-          07-12
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2021/07/12/osnote-md/" itemprop="url">
-              
-                <span itemprop="name">操作系统知识点</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2021-07-12T10:38:16+08:00"
-              content="2021-07-12" >
-          07-12
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+      
+        <h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>今天晚上看到了几个比较有意思的问题，在这里记录一下<br>以下“xx问题 ”都是自创词汇</p>
+<h3 id="验毒问题"><a href="#验毒问题" class="headerlink" title="验毒问题"></a>验毒问题</h3><blockquote>
+<p><strong>题目：1000瓶酒，其中有一瓶有毒，老鼠喝了毒酒会在一天之后死亡。给你一天时间，要用最少的老鼠数量找出毒酒</strong></p>
+</blockquote>
+<ol>
+<li>拿出十个碗</li>
+<li>对每瓶酒使用二进制进行编号</li>
+<li>遍历一千瓶酒。取出每瓶酒二进制位为 1 的下标，滴入对应下标的碗中</li>
+<li>十只老鼠分别喝一个碗里面的酒，一天之后死了的老鼠的下标标志位为1。</li>
+<li>此标志位恢复为十进制就是毒酒的编号</li>
+</ol>
+<h3 id="天平问题"><a href="#天平问题" class="headerlink" title="天平问题"></a>天平问题</h3><blockquote>
+<p><strong>问题：八个小球，其中有一个重量较轻的，使用天平找出较轻小球。要求尽可能少使用天平</strong><br>这个问题首先想到的就是二分法，每次排除一半，需要秤三次。<br>但是还有更优的解法，只需要秤两次就可以求解出来。</p>
+</blockquote>
+<ol>
+<li>任意拿出六个球，称一次</li>
+<li><ol>
+<li>如果步骤一重量相同，秤剩下的两个小球，得出结果</li>
+<li>如果步骤一重量不相同，在较轻的那三个里面任意拿两个出来秤。<ol>
+<li>如果重量相同，剩下那一个就是结果</li>
+<li>如果重量不相同，较轻的那个就是结果</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="帽子问题"><a href="#帽子问题" class="headerlink" title="帽子问题"></a>帽子问题</h3><blockquote>
+<p><strong>问题：晚会上参会人做了一个游戏。每人随机分了一顶白色或黑色的帽子（黑帽子至少有1顶）。每人都可以看到其它人的帽子颜色，但不能看到自己的。主持人说让大家根据别人帽子的颜色猜黑色帽子的个数，规则如下：关灯，如果有人知道了黑色帽子的个数马上报出来；如果没人报，打开灯，让大家观察，然后回到第1步。第一次关灯，没人报数；开灯然后第二次关灯，仍没有动静；直到第三次开灯关灯后，才有人报数。请问，有几顶黑帽子？</strong></p>
+</blockquote>
+<ol>
+<li>假设只有一个黑帽子。黑帽A在一开始就会发现周围全部都是白帽，而又最少有一个黑帽，所以他会判断就是自己，所以第一次关灯就会报数</li>
+<li>假设有两个黑帽。<ol>
+<li>黑帽A B，在第一次时发现周围有一个黑帽，但是他不确定自己是不是黑帽，所以第一次他们都不会报数</li>
+<li>黑帽A B，在基于第一次没人报数以及看到一顶黑帽的情况下，可以判断有两个黑帽，而自己只看到了一个黑帽，所以可以判断自己就是黑帽，所以第二次关灯会报数</li>
+</ol>
+</li>
+<li>假设有三个黑帽<ol>
+<li>黑帽A B C，在第一次时发现周围有两个黑帽，但是他不确定自己是不是黑帽，所以第一次他们都不会报数</li>
+<li>黑帽A B C，在第二次时发现周围有两个黑帽，但是他仍然不确定自己是不是黑帽，所以第二次依然不会报数</li>
+<li>黑帽A B C，在第三次时发现周围有两个黑帽，同时他们知道如果只有两个黑帽的话，那么第二次关灯就会报数。但是没有人报数，所以会判断有三个黑帽，从而确定自己就是黑帽，然后就会报数</li>
+</ol>
+</li>
+</ol>
+<p>之后的话依次类推，第几次关灯报数就有几个黑帽</p>
+<h3 id="药片问题"><a href="#药片问题" class="headerlink" title="药片问题"></a>药片问题</h3><blockquote>
+<p><strong>一个人需要吃两种药，每种药有两片，早晚每种药应该各吃一片，但是四个药片混合在一起了,应该使用什么策略吃药</strong><br>磨碎了吃…</p>
+</blockquote>
+<h3 id="分水问题"><a href="#分水问题" class="headerlink" title="分水问题"></a>分水问题</h3><blockquote>
+<p><strong>只有 5L 和 6L 的瓶子，如何得到 3L 的水</strong></p>
+</blockquote>
+<ol>
+<li>把 5l 的倒满.</li>
+<li>把 5l 水倒入 6l 的。</li>
+<li>再倒一杯 5l，倒 1l 给 6l，剩下 4l。</li>
+<li>把 6l 倒掉，把 4l 倒入。</li>
+<li>把 5l 的杯子装满，倒 2l 给 6l 的。3l 就有了。</li>
+</ol>
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2021/07/09/computerNet-md/" itemprop="url">
-              
-                <span itemprop="name">计算机网络部分知识点</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2021-07-09T18:40:55+08:00"
-              content="2021-07-09" >
-          07-09
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2021/07/12/git/" rel="next" title="git">
+                <i class="fa fa-chevron-left"></i> git
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -426,6 +436,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -446,8 +460,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -489,6 +512,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2"><span class="nav-number">1.</span> <span class="nav-text">写在前面</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%AA%8C%E6%AF%92%E9%97%AE%E9%A2%98"><span class="nav-number">1.1.</span> <span class="nav-text">验毒问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%A9%E5%B9%B3%E9%97%AE%E9%A2%98"><span class="nav-number">1.2.</span> <span class="nav-text">天平问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%BD%E5%AD%90%E9%97%AE%E9%A2%98"><span class="nav-number">1.3.</span> <span class="nav-text">帽子问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%8D%AF%E7%89%87%E9%97%AE%E9%A2%98"><span class="nav-number">1.4.</span> <span class="nav-text">药片问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%86%E6%B0%B4%E9%97%AE%E9%A2%98"><span class="nav-number">1.5.</span> <span class="nav-text">分水问题</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -618,6 +657,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.0"></script>
+
+
 
   
 

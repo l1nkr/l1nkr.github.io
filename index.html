@@ -75,36 +75,17 @@
 
 
 
-<meta name="description" content="第一章 导论现代通用计算机系统由一个或多个CPU和若干设备控制器通过共同的总线相连而成。 打开电源或重启——运行初始化程序（引导程序）——定位操作系统并将其装入内存——执行第一个进程 引导程序：通常位于ROM或者EEPROM，称为计算机硬件中的固件。用来初始化系统的所有部分（CPU寄存器，设备控制器和内存）。中断：硬件可随时通过系统总线向CPU发出信号，出发中断。软件通过系统调用（或者其他特别操作">
+<meta name="description" content="今天git使用遇到了一个问题 问题背景公司存在一个仓库，还有自己fork的仓库，以及本地仓库。公司仓库的master分支一只在进行开发，fork的仓库和我本地的保持一致，本地仓库是基于之前公司仓库的一个分支进行开发的 上游仓库存在一个分支a，远程仓库以及本地仓库都存在一个a分支但是后来上游仓库将分支a删除了，我之前向上游提交的pr也都被revert了 在这种情况，我希望能够将我新开发的特性融入到上">
 <meta property="og:type" content="article">
-<meta property="og:title" content="操作系统知识点">
-<meta property="og:url" content="http://example.com/2021/07/12/osnote-md/index.html">
+<meta property="og:title" content="git">
+<meta property="og:url" content="http://example.com/2021/07/12/git/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="第一章 导论现代通用计算机系统由一个或多个CPU和若干设备控制器通过共同的总线相连而成。 打开电源或重启——运行初始化程序（引导程序）——定位操作系统并将其装入内存——执行第一个进程 引导程序：通常位于ROM或者EEPROM，称为计算机硬件中的固件。用来初始化系统的所有部分（CPU寄存器，设备控制器和内存）。中断：硬件可随时通过系统总线向CPU发出信号，出发中断。软件通过系统调用（或者其他特别操作">
+<meta property="og:description" content="今天git使用遇到了一个问题 问题背景公司存在一个仓库，还有自己fork的仓库，以及本地仓库。公司仓库的master分支一只在进行开发，fork的仓库和我本地的保持一致，本地仓库是基于之前公司仓库的一个分支进行开发的 上游仓库存在一个分支a，远程仓库以及本地仓库都存在一个a分支但是后来上游仓库将分支a删除了，我之前向上游提交的pr也都被revert了 在这种情况，我希望能够将我新开发的特性融入到上">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/2021/07/12/osnote-md/Xnip2021-06-03_14-25-46.jpg">
-<meta property="og:image" content="http://example.com/2021/07/12/osnote-md/Xnip2021-06-03_16-42-27.jpg">
-<meta property="og:image" content="http://example.com/2021/07/12/osnote-md/Xnip2021-06-03_16-55-15.jpg">
-<meta property="og:image" content="http://example.com/2021/07/12/osnote-md/Xnip2021-06-03_17-18-02.jpg">
-<meta property="og:image" content="http://example.com/2021/07/12/osnote-md/Xnip2021-06-03_17-36-12.jpg">
-<meta property="og:image" content="http://example.com/2021/07/12/osnote-md/Xnip2021-06-03_18-02-05.jpg">
-<meta property="og:image" content="http://example.com/2021/07/12/osnote-md/Xnip2021-06-03_18-03-27.jpg">
-<meta property="og:image" content="http://example.com/2021/07/12/osnote-md/Xnip2021-06-03_18-21-13.jpg">
-<meta property="og:image" content="http://example.com/2021/07/12/osnote-md/Xnip2021-06-03_18-31-48.jpg">
-<meta property="og:image" content="http://example.com/2021/07/12/osnote-md/Xnip2021-06-03_18-35-55.jpg">
-<meta property="og:image" content="http://example.com/2021/07/12/osnote-md/Xnip2021-06-03_18-43-06.jpg">
-<meta property="og:image" content="http://example.com/2021/07/12/osnote-md/Xnip2021-06-03_18-53-22.jpg">
-<meta property="og:image" content="http://example.com/2021/07/12/osnote-md/Xnip2021-06-04_13-16-58.jpg">
-<meta property="og:image" content="http://example.com/2021/07/12/osnote-md/Xnip2021-06-04_13-19-24.jpg">
-<meta property="og:image" content="http://example.com/2021/07/12/osnote-md/Xnip2021-06-04_13-28-02.jpg">
-<meta property="og:image" content="http://example.com/2021/07/12/osnote-md/Xnip2021-06-04_13-28-57.jpg">
-<meta property="og:image" content="http://example.com/2021/07/12/osnote-md/Xnip2021-06-04_13-30-51.jpg">
-<meta property="og:image" content="http://example.com/2021/07/12/osnote-md/Xnip2021-06-04_13-31-58.jpg">
-<meta property="article:published_time" content="2021-07-12T02:38:16.000Z">
-<meta property="article:modified_time" content="2021-07-12T02:42:06.259Z">
+<meta property="article:published_time" content="2021-07-12T10:33:06.000Z">
+<meta property="article:modified_time" content="2021-07-12T11:06:32.555Z">
 <meta property="article:author" content="Nick">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/2021/07/12/osnote-md/Xnip2021-06-03_14-25-46.jpg">
 
 
 
@@ -136,7 +117,7 @@
 
 
 
-  <link rel="canonical" href="http://example.com/2021/07/12/osnote-md/"/>
+  <link rel="canonical" href="http://example.com/2021/07/12/git/"/>
 
 
 
@@ -260,6 +241,307 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/07/15/logic-prolem/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2021/07/15/logic-prolem/" itemprop="url">逻辑问题</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-07-15T22:31:41+08:00">2021-07-15</time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>今天晚上看到了几个比较有意思的问题，在这里记录一下<br>以下“xx问题 ”都是自创词汇</p>
+<h3 id="验毒问题"><a href="#验毒问题" class="headerlink" title="验毒问题"></a>验毒问题</h3><blockquote>
+<p><strong>题目：1000瓶酒，其中有一瓶有毒，老鼠喝了毒酒会在一天之后死亡。给你一天时间，要用最少的老鼠数量找出毒酒</strong></p>
+</blockquote>
+<ol>
+<li>拿出十个碗</li>
+<li>对每瓶酒使用二进制进行编号</li>
+<li>遍历一千瓶酒。取出每瓶酒二进制位为 1 的下标，滴入对应下标的碗中</li>
+<li>十只老鼠分别喝一个碗里面的酒，一天之后死了的老鼠的下标标志位为1。</li>
+<li>此标志位恢复为十进制就是毒酒的编号</li>
+</ol>
+<h3 id="天平问题"><a href="#天平问题" class="headerlink" title="天平问题"></a>天平问题</h3><blockquote>
+<p><strong>问题：八个小球，其中有一个重量较轻的，使用天平找出较轻小球。要求尽可能少使用天平</strong><br>这个问题首先想到的就是二分法，每次排除一半，需要秤三次。<br>但是还有更优的解法，只需要秤两次就可以求解出来。</p>
+</blockquote>
+<ol>
+<li>任意拿出六个球，称一次</li>
+<li><ol>
+<li>如果步骤一重量相同，秤剩下的两个小球，得出结果</li>
+<li>如果步骤一重量不相同，在较轻的那三个里面任意拿两个出来秤。<ol>
+<li>如果重量相同，剩下那一个就是结果</li>
+<li>如果重量不相同，较轻的那个就是结果</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="帽子问题"><a href="#帽子问题" class="headerlink" title="帽子问题"></a>帽子问题</h3><blockquote>
+<p><strong>问题：晚会上参会人做了一个游戏。每人随机分了一顶白色或黑色的帽子（黑帽子至少有1顶）。每人都可以看到其它人的帽子颜色，但不能看到自己的。主持人说让大家根据别人帽子的颜色猜黑色帽子的个数，规则如下：关灯，如果有人知道了黑色帽子的个数马上报出来；如果没人报，打开灯，让大家观察，然后回到第1步。第一次关灯，没人报数；开灯然后第二次关灯，仍没有动静；直到第三次开灯关灯后，才有人报数。请问，有几顶黑帽子？</strong></p>
+</blockquote>
+<ol>
+<li>假设只有一个黑帽子。黑帽A在一开始就会发现周围全部都是白帽，而又最少有一个黑帽，所以他会判断就是自己，所以第一次关灯就会报数</li>
+<li>假设有两个黑帽。<ol>
+<li>黑帽A B，在第一次时发现周围有一个黑帽，但是他不确定自己是不是黑帽，所以第一次他们都不会报数</li>
+<li>黑帽A B，在基于第一次没人报数以及看到一顶黑帽的情况下，可以判断有两个黑帽，而自己只看到了一个黑帽，所以可以判断自己就是黑帽，所以第二次关灯会报数</li>
+</ol>
+</li>
+<li>假设有三个黑帽<ol>
+<li>黑帽A B C，在第一次时发现周围有两个黑帽，但是他不确定自己是不是黑帽，所以第一次他们都不会报数</li>
+<li>黑帽A B C，在第二次时发现周围有两个黑帽，但是他仍然不确定自己是不是黑帽，所以第二次依然不会报数</li>
+<li>黑帽A B C，在第三次时发现周围有两个黑帽，同时他们知道如果只有两个黑帽的话，那么第二次关灯就会报数。但是没有人报数，所以会判断有三个黑帽，从而确定自己就是黑帽，然后就会报数</li>
+</ol>
+</li>
+</ol>
+<p>之后的话依次类推，第几次关灯报数就有几个黑帽</p>
+<h3 id="药片问题"><a href="#药片问题" class="headerlink" title="药片问题"></a>药片问题</h3><blockquote>
+<p><strong>一个人需要吃两种药，每种药有两片，早晚每种药应该各吃一片，但是四个药片混合在一起了,应该使用什么策略吃药</strong><br>磨碎了吃…</p>
+</blockquote>
+<h3 id="分水问题"><a href="#分水问题" class="headerlink" title="分水问题"></a>分水问题</h3><blockquote>
+<p><strong>只有 5L 和 6L 的瓶子，如何得到 3L 的水</strong></p>
+</blockquote>
+<ol>
+<li>把 5l 的倒满.</li>
+<li>把 5l 水倒入 6l 的。</li>
+<li>再倒一杯 5l，倒 1l 给 6l，剩下 4l。</li>
+<li>把 6l 倒掉，把 4l 倒入。</li>
+<li>把 5l 的杯子装满，倒 2l 给 6l 的。3l 就有了。</li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/07/12/git/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2021/07/12/git/" itemprop="url">git</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-07-12T18:33:06+08:00">2021-07-12</time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>今天git使用遇到了一个问题</p>
+<h3 id="问题背景"><a href="#问题背景" class="headerlink" title="问题背景"></a>问题背景</h3><p>公司存在一个仓库，还有自己fork的仓库，以及本地仓库。<br>公司仓库的master分支一只在进行开发，fork的仓库和我本地的保持一致，本地仓库是基于之前公司仓库的一个分支进行开发的</p>
+<p>上游仓库存在一个分支a，远程仓库以及本地仓库都存在一个a分支<br>但是后来上游仓库将分支a删除了，我之前向上游提交的pr也都被revert了</p>
+<p>在这种情况，我希望能够将我新开发的特性融入到上游最新的分支应该如何做呢?</p>
+<h3 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h3><p>我的思路是这样的，首先在本地建立一个分支，然后将上游最新分支拉到这个分支，<br>然后将我含有我新特性的分支merge到新拉下来的分支，然后进行pr</p>
+<p>存在的问题是</p>
+<ol>
+<li>存在冲突 这个比较好解决，手动解决一下冲突就可以</li>
+<li>以前提交的代码被revert 不知道如何进行解决，如何被revert了，那么我的新特性就无法实现了</li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
     
       
 
@@ -1453,7 +1735,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
